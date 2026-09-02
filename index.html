@@ -2,62 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Practice - The Odin Project</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
+
+    <!-- ============ NAVIGATION ============ -->
     <header class="site-header">
         <nav class="main-nav">
             <a href="#" class="logo">Header Logo</a>
-            <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Info</a></li>
-                <li><a href="#">Cta</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#info">Header Link One</a></li>
+                <li><a href="#testimonial">Header Link Two</a></li>
+                <li><a href="#cta">Header Link Three</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- ============ HERO ============ -->
     <section class="hero">
         <div class="hero-text">
             <h1>This website is awesome</h1>
             <p>
-                This website has some subtext that goes under the main title
-                It's a similar don't and the color is lower contrast.
+                This website has some subtext that goes here under the main title.
+                It's a smaller font and the color is lower contrast.
             </p>
-            <a href="#" class="btn btn-primary"> Sign up</a>
-
+            <a href="#" class="btn btn-primary">Sign up</a>
         </div>
+
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="Hero Image">
+            <img src="https://via.placeholder.com/500x300/6b7280/ffffff?text=this+is+a+placeholder+for+an+image"
+                alt="Placeholder illustration representing the product" />
         </div>
     </section>
-    <ul class="info-boxes">
-        <li class="info-box">
-            <img src="https://via.placeholder.com/150" alt="" />
-            <p>This is some subtext under an illustration or image</p>
-        </li>
-        <li class="info-box">
-            <img src="https://via.placeholder.com/150" alt="" />
-            <p>This is some subtext under an illustration or image</p>
-        </li>
-        <li class="info-box">
-            <img src="https://via.placeholder.com/150" alt="" />
-            <p>This is some subtext under an illustration or image</p>
-        </li>
-        <li class="info-box">
-            <img src="https://via.placeholder.com/150" alt="" />
-            <p>This is some subtext under an illustration or image</p>
-        </li>
-    </ul>
+
+    <!-- ============ placeholder targets — real content coming next ============ -->
+    <section id="info" class="info-section">
+        <h2>Some random information.</h2>
+
+        <ul class="info-boxes">
+            <li class="info-box">
+                <img src="https://via.placeholder.com/150" alt="" />
+                <p>This is some subtext under an illustration or image</p>
+            </li>
+            <li class="info-box">
+                <img src="https://via.placeholder.com/150" alt="" />
+                <p>This is some subtext under an illustration or image</p>
+            </li>
+            <li class="info-box">
+                <img src="https://via.placeholder.com/150" alt="" />
+                <p>This is some subtext under an illustration or image</p>
+            </li>
+            <li class="info-box">
+                <img src="https://via.placeholder.com/150" alt="" />
+                <p>This is some subtext under an illustration or image</p>
+            </li>
+        </ul>
     </section>
 
     <section id="testimonial" class="testimonial-section">
@@ -70,6 +73,7 @@
             <footer>&mdash; <cite>Thor, God of Thunder</cite></footer>
         </blockquote>
     </section>
+
     <section id="cta" class="cta-banner">
         <div class="cta-text">
             <h2>Call to action! It's time!</h2>
@@ -81,7 +85,6 @@
     <footer class="site-footer">
         <p>Copyright &copy; The Odin Project 2021</p>
     </footer>
-
 
 </body>
 

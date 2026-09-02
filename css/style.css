@@ -13,20 +13,21 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     color: #1f2937;
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: inherit;
 }
 
 img {
     max-width: 100%;
+    /* images never overflow their container */
     display: block;
-
+    /* removes the small default gap under inline images */
 }
 
 
@@ -35,18 +36,22 @@ img {
    ========================================================== */
 .site-header {
     background-color: #1f2937;
+    /* dark navy, matches the hero */
     padding: 1.5rem 3rem;
-    margin-bottom: 3rem;
 }
 
 .main-nav {
     display: flex;
+    /* puts logo and link-list on one row */
     flex-wrap: wrap;
+    /* lets the link list drop below the logo if there's no room */
     justify-content: space-between;
+    /* logo on the left, links on the right */
     align-items: center;
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    /* centers the whole nav bar on wide screens */
 }
 
 .logo {
@@ -58,9 +63,9 @@ img {
 .nav-links {
     display: flex;
     flex-direction: row;
-    gap: 1rem 2rem;
+    /* single horizontal line: Home Contact Cta Services */
+    gap: 1.5rem;
     list-style: none;
-
 }
 
 .nav-links a {
@@ -95,12 +100,13 @@ img {
     align-items: center;
     gap: 3rem;
     max-width: 1200px;
-    margin-bottom: 3rem;
+    margin: 0 auto;
     padding: 4rem 3rem;
 }
 
 .hero-text {
     flex: 1;
+    /* takes up available space so text and image share the row proportionally */
     color: #ffffff;
 }
 
@@ -111,8 +117,10 @@ img {
 
 .hero-text p {
     color: #9ca3af;
+    /* lighter grey = "lower contrast" subtext, as your reference describes */
     margin-bottom: 1.5rem;
     max-width: 60ch;
+    /* keeps the line length readable, not stretched edge-to-edge */
 }
 
 .hero-image {
@@ -144,8 +152,10 @@ img {
    ========================================================== */
 .info-section {
     max-width: 1200px;
-    margin: 10px auto;
+    margin: 3rem auto;
+    /* space ABOVE and BELOW this section, separating it from hero and testimonial */
     padding: 4rem 3rem;
+    /* space INSIDE the section, around its own content */
     text-align: center;
 }
 
@@ -160,7 +170,7 @@ img {
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-
+    /* lets boxes drop to a new row on small screens instead of squeezing */
 }
 
 .info-box {
@@ -216,6 +226,7 @@ img {
     max-width: 1200px;
     margin: 3rem auto;
     padding: 2.5rem 3rem;
+    border-radius: 12px;
     color: #ffffff;
 }
 
