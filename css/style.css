@@ -1,0 +1,228 @@
+/* ==========================================================
+   1. RESET / BASE
+   Browsers each ship different default margins/padding on
+   headings, lists, etc. This resets to a known, consistent
+   starting point so our spacing choices later are intentional,
+   not accidental leftovers from the browser defaults.
+   ========================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* padding/border count INSIDE an element's width, not added on top */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #1f2937;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    /* images never overflow their container */
+    display: block;
+    /* removes the small default gap under inline images */
+}
+
+
+/* ==========================================================
+   2. NAVIGATION
+   ========================================================== */
+.site-header {
+    background-color: #1f2937;
+    /* dark navy, matches the hero */
+    padding: 1.5rem 3rem;
+}
+
+.main-nav {
+    display: flex;
+    /* puts logo and link-list on one row */
+    justify-content: space-between;
+    /* logo on the left, links on the right */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* centers the whole nav bar on wide screens */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    /* this is the line that turns the stacked <li>s horizontal */
+    gap: 2rem;
+    list-style: none;
+    /* removes the bullets */
+}
+
+.nav-links a {
+    color: #ffffff;
+}
+
+
+/* ==========================================================
+   3. HERO
+   ========================================================== */
+.hero {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+}
+
+.hero-text {
+    flex: 1;
+    /* takes up available space so text and image share the row proportionally */
+    color: #ffffff;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    color: #9ca3af;
+    /* lighter grey = "lower contrast" subtext, as your reference describes */
+    margin-bottom: 1.5rem;
+    max-width: 60ch;
+    /* keeps the line length readable, not stretched edge-to-edge */
+}
+
+.hero-image {
+    flex: 1;
+}
+
+/* shared button base */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+
+/* ==========================================================
+   4. INFO / BOXES SECTION
+   ========================================================== */
+.info-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.info-boxes {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    /* lets boxes drop to a new row on small screens instead of squeezing */
+}
+
+.info-box {
+    width: 150px;
+}
+
+.info-box img {
+    border: 2px solid #3b82f6;
+    border-radius: 8px;
+    margin: 0 auto 1rem auto;
+}
+
+.info-box p {
+    color: #4b5563;
+    font-size: 0.9rem;
+}
+
+
+/* ==========================================================
+   5. TESTIMONIAL
+   ========================================================== */
+.testimonial-section {
+    background-color: #e5e7eb;
+    padding: 4rem 3rem;
+}
+
+.testimonial-section blockquote {
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #374151;
+}
+
+.testimonial-section footer {
+    margin-top: 1.5rem;
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* ==========================================================
+   6. CALL TO ACTION BANNER
+   ========================================================== */
+.cta-banner {
+    background-color: #3b82f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2.5rem 3rem;
+    border-radius: 12px;
+    color: #ffffff;
+}
+
+.cta-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-text p {
+    color: #dbeafe;
+}
+
+
+/* ==========================================================
+   7. FOOTER
+   ========================================================== */
+.site-footer {
+    background-color: #1f2937;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+}
