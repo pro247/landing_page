@@ -13,22 +13,20 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
     line-height: 1.5;
     color: #1f2937;
 }
 
 a {
     text-decoration: none;
-
     color: #ffffff;
 }
 
 img {
     max-width: 100%;
-    /* images never overflow their container */
     display: block;
-    /* removes the small default gap under inline images */
+
 }
 
 
@@ -37,23 +35,18 @@ img {
    ========================================================== */
 .site-header {
     background-color: #1f2937;
-    /* dark navy, matches the hero */
     padding: 1.5rem 3rem;
     margin-bottom: 3rem;
 }
 
 .main-nav {
     display: flex;
-    /* puts logo and link-list on one row */
     flex-wrap: wrap;
-    /* lets the link list drop below the logo if there's no room */
     justify-content: space-between;
-    /* logo on the left, links on the right */
     align-items: center;
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
-    /* centers the whole nav bar on wide screens */
 }
 
 .logo {
@@ -64,13 +57,10 @@ img {
 
 .nav-links {
     display: flex;
-    /* this is the line that turns the stacked <li>s horizontal */
-    flex-wrap: wrap;
-    /* on narrow screens, links drop to a new row instead of overflowing */
+    flex-direction: row;
     gap: 1rem 2rem;
-    /* row-gap column-gap: tighter vertical spacing once wrapped */
     list-style: none;
-    /* removes the bullets */
+
 }
 
 .nav-links a {
@@ -105,13 +95,12 @@ img {
     align-items: center;
     gap: 3rem;
     max-width: 1200px;
-    margin: 3rem auto;
+    margin-bottom: 3rem;
     padding: 4rem 3rem;
 }
 
 .hero-text {
     flex: 1;
-    /* takes up available space so text and image share the row proportionally */
     color: #ffffff;
 }
 
@@ -122,10 +111,8 @@ img {
 
 .hero-text p {
     color: #9ca3af;
-    /* lighter grey = "lower contrast" subtext, as your reference describes */
     margin-bottom: 1.5rem;
     max-width: 60ch;
-    /* keeps the line length readable, not stretched edge-to-edge */
 }
 
 .hero-image {
@@ -173,7 +160,7 @@ img {
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-    /* lets boxes drop to a new row on small screens instead of squeezing */
+
 }
 
 .info-box {
